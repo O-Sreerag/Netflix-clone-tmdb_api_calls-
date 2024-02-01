@@ -1,0 +1,71 @@
+.row {
+    margin-left: 20px;
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.posters {
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.posters::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.poster {
+    cursor: pointer;
+    max-height: 250px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.poster:hover {
+    transform: scale(1.06);
+}
+
+.smallPoster {
+    cursor: pointer;
+    max-height: 150px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.smallPoster:hover {
+    transform: scale(1.1);
+}
+
+.movie-name-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.movie-container:hover .movie-name-overlay {
+    opacity: 1;
+}
+
+.movie-name {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
