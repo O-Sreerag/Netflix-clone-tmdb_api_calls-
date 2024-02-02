@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build":"react scripts build && serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,5 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://o-sreerag.github.io/Netflix-clone-tmdb_api_calls-/"
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
 }
